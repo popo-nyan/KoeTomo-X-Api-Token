@@ -24,6 +24,6 @@ response = httpx.request(method="POST",
                              "password": "".join(secrets.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for _ in range(10)),
                              "name": "".join([random.choice(string.ascii_letters + string.ascii_uppercase) for _ in range(15)]),
                              "sex": random.choice(["1", "2"]),
-                             "birthday": str(int(random.uniform(1970, 2001))) + "-" + str(int(random.uniform(1, 12))) + "-" + str(int(random.uniform(1, 28))),
+                             "birthday": str(int(random.uniform(1970, 2001))) + "/" + str(int(random.uniform(1, 12))) + "/" + str(int(random.uniform(1, 28))),
                              "device_uid": secrets.token_hex(8)})
 print(response, response.text)
