@@ -4,8 +4,6 @@
 
 KoeTomoでアカウントを作成する時に必要なハッシュ値
 
-# Using
-
 ```bash
 python -m venv .venv
 source .venv/bin/activate
